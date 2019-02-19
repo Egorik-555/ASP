@@ -8,7 +8,7 @@ namespace UrlsAndRoutes.Controllers
 {
     public class AdminController : Controller
     {
-        // GET: Admin
+        // GET: Admin      
         public ActionResult Index()
         {
             ViewBag.Controller = "Admin";

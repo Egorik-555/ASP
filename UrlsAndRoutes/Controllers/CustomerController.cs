@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace UrlsAndRoutes.Controllers
-{
+{ 
     public class CustomerController : Controller
     {
         // GET: Customer
@@ -16,6 +16,7 @@ namespace UrlsAndRoutes.Controllers
             return View("ActionName");
         }
 
+        [Route("Test")]
         public ActionResult List()
         {
             ViewBag.Controller = "Customer";
@@ -30,5 +31,7 @@ namespace UrlsAndRoutes.Controllers
             ViewBag.CustomerId = RouteData.Values["id"];
             return View("ActionName");
         }
+
+   
     }
 }
