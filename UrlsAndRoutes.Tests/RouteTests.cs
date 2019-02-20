@@ -88,12 +88,11 @@ namespace UrlsAndRoutes.Tests
         [TestMethod]
         public void TestIncomingRoutes()
         {
-            TestRoutMatch("~/Admin/Index", "Admin", "Index", new { id = "defaultId" });
-            TestRoutMatch("~/One/Two", "One", "Two", new { id = "defaultId" });
-            TestRoutMatch("~/Admin", "Admin", "Index", new { id = "defaultId" });
-            TestRoutMatch("~/", "Home", "Index", new { id = "defaultId" });
+            TestRoutMatch("~/", "Home", "Index");
 
-            TestRoutMatch("~/Admin/Index/All", "Admin", "Index", new { id = "All" });
+            TestRouteFail("~/Admin/Index");
+            TestRouteFail("~/One/Two");
+           
 
             TestRouteFail("~/Admin/Index/One/Delete");
         }
