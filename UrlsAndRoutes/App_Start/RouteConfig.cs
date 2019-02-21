@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Routing.Constraints;
 using System.Web.Routing;
+using UrlsAndRoutes.Infrastructure;
 
 namespace UrlsAndRoutes
 {
@@ -14,19 +15,13 @@ namespace UrlsAndRoutes
         {
             //routes.IgnoreRoute("{resource}.axd/{*pathInfo}");    
 
-           
+            routes.Add(new Route("SayHello", new CustomerRouteHandler()));
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new {action = "Index", controller = "Home", id = UrlParameter.Optional}                   
-            );
-
-            routes.MapRoute(
-               name: "AdminDo",
-               url: "AdminDo/{action}",
-               defaults: new { controller = "Admin" }
-           );
+            );        
         }
     }
 }

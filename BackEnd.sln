@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlsAndRoutes.Tests", "Urls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlsAndRoutes.Tests.UVD", "TestsInUVD\UrlsAndRoutes.Tests.UVD.csproj", "{A3FFE4AD-3D7A-432A-9A50-7E2826787443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_Views", "2_Views\2_Views.csproj", "{71E8315D-056C-4F43-B3C2-ABE6EF1B6CEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A3FFE4AD-3D7A-432A-9A50-7E2826787443}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3FFE4AD-3D7A-432A-9A50-7E2826787443}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3FFE4AD-3D7A-432A-9A50-7E2826787443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E8315D-056C-4F43-B3C2-ABE6EF1B6CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E8315D-056C-4F43-B3C2-ABE6EF1B6CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E8315D-056C-4F43-B3C2-ABE6EF1B6CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E8315D-056C-4F43-B3C2-ABE6EF1B6CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
