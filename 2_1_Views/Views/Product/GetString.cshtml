@@ -1,0 +1,9 @@
+﻿@model IEnumerable<_2_1_Views.Models.Product>
+
+@foreach(var item in Model)
+{
+    @item.Id@:. @item.Name - @item.Price$ (@item.CreateDate)
+
+    <br/>
+}
+

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<_2_1_Views.Models.Product>
+
+@{
+    ViewBag.Title = "TableProduct";
+}
+
+<h2>TableProduct</h2>
+
+<table>
+
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>CreateDate</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_table", item)
+    }
+
+</table>
+
+
