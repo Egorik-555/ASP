@@ -1,0 +1,21 @@
+﻿@model _5_Model.Models.User
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.UserName)
+    @Html.EditorFor(m => m.UserName)
+
+    <br />
+
+    @Html.LabelFor(m => m.FIO)
+    @Html.EditorFor(m => m.FIO)
+
+    <input type="submit" value="send"/>
+}
+

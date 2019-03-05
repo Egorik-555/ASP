@@ -1,0 +1,19 @@
+﻿
+@model _5_Helpers.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+@using (Html.BeginForm()) {
+
+    @:Name: @Html.TextBoxFor(m => m.Name) <br />
+
+    @:Price: @Html.TextBoxFor(m => m.Price) <br />
+
+    <input type="submit" value="Send"/>
+
+}
+
+
